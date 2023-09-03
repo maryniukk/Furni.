@@ -1,0 +1,110 @@
+// Container
+.container {
+    max-width: ($containerWidth + $containerPadding) + px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 $containerSidePadding + px;
+
+    @media (max-width: $breakpoint1450) {
+        max-width: 1200px;
+    }
+
+    @media (max-width: $breakpoint992) {
+        max-width: 970px;
+    }
+
+    @media (max-width: $breakpoint768) {
+        max-width: 740px;
+    }
+
+    @media (max-width: $breakpoint480) {
+        max-width: none;
+    }
+}
+
+// Body & Locked
+body {
+    font-family: $fontMain;
+    background-color: #EFF2F1;
+    &.locked {
+        overflow: hidden;
+    }
+    // Dark mode styles
+    &.dark {
+        background: #242424;
+    }
+}
+.btn{
+    padding: 11px 35px;
+    display: inline-block;
+    font-style: normal; 
+    font-weight: 500; 
+    font-size: 16px; 
+    line-height: 28px;
+    text-align: center;
+    color: white;
+    border-radius: 30px;
+    &.btn__hero{
+        background-color: #F9BF29;
+        color: #2f2f2f;
+        transition: 0.15s ease-in, color;
+        &:hover{
+            background: darken( #F9BF29, 10);
+            color: #fff;
+        }
+    }
+    &.btn__outline{
+        border: 2px solid rgba(255, 255, 255, 0.29);
+        color: #fff;
+        background: transparent;
+        transition: 0.15s ease-out, color;
+        &:hover{
+            background: #fff;
+            color: #242424;
+            border-color: #fff;
+        }
+}  
+    &.btn__section{
+        color: white;
+        background-color: #2f2f2f;
+        transition: 0.3s ease-out, color;
+        margin-top: 36px;
+        &:hover{
+            background: lighten( #d1d1d1,5%);
+            color: #242424;
+        }
+}
+}
+
+// Animations
+// Fade
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+//Section items//
+.section{
+    &__title{
+            color: #2F2F2F;
+            font-size: 34px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+    }
+    &__text{
+        color: #6A6A6A;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        margin-top: 28px;
+    }
+}
+.text__center{
+    text-align: center;
+} 

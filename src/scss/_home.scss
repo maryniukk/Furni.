@@ -1,0 +1,126 @@
+// Section hero //
+.section{
+    &__hero{
+        padding-top: 90px;
+        background-color: #3B5D50;
+        position: relative;
+    }
+    .hero__svg{
+        position: absolute;
+        display: block;
+    }
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+    &__item{
+        z-index: 2;
+        &.left__item{
+            flex: 1 0 420px;
+            
+        }
+        &.right__item{
+            @media screen {
+                
+            }
+        }
+    }
+    &__title{
+        flex: 1 0 420px;
+
+    }
+    &__title{
+        color: #FFF;
+        font-family: Inter;
+        font-size: 54px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    &__buttons{
+        margin-top: 117px;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+    }
+}
+//Section materials//
+.section{
+    &__materials{
+        padding: 125px 0;
+    }
+    &__title{
+        width: 240px;
+    }
+    &__text{
+        width: 240px;
+    }
+}
+.materials{
+    display: flex;
+    gap: 114px;
+    &__item{
+        &.left__item{
+            flex: 0 1 230px;
+        }
+    }
+ }
+ .products{
+    display: flex;
+    gap: 79px;
+    &__img{
+        min-height: 260px;
+    }
+    &__info{
+        margin-top: 46px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__name{
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        color: #2f2f2f;
+    }
+    &__price{
+        color: #2F2F2F;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px; 
+    }
+
+ }
+
+ //Section Choose
+
+.section{
+    &__choose{ 
+        padding: 25px 0 70px 0;
+    }
+.choose{
+    display: flex;
+    justify-content: space-between;
+    &__item{
+        &.left{
+            &__item{
+            }
+        }
+        &.right{
+            &__item{
+            }
+        }
+    }
+}
+.why{
+    &__item{
+    }
+    &__icon{
+    }
+    &__title{
+
+    }
+}
+}

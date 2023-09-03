@@ -1,0 +1,76 @@
+.steps__form {
+  height: 500px;
+  width: 500px;
+  border: 1px solid grey;
+  padding: 15px;
+}
+
+.progress {
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  transition: 0.3s all ease;
+  background: gray;
+}
+.progress__success {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 2px;
+  background: blueviolet;
+}
+
+.steps__numbers {
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  position: relative;
+}
+.steps__numbers .step__number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s all ease;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  font-size: 24px;
+  background: gray;
+}
+.steps__numbers .step__number.active__number {
+  transition: 0.3s all ease;
+  color: white;
+  background: blueviolet;
+}
+
+.form__step {
+  display: none;
+}
+.form__step.active {
+  display: block;
+}
+
+.step__buttons {
+  display: flex;
+  gap: 50px;
+  margin-top: 25px;
+}
+.step__buttons .button {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: blueviolet;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  transition: 0.3s all ease;
+  width: 100%;
+}
+.step__buttons .button:disabled {
+  background: gray;
+}/*# sourceMappingURL=stepForm.css.map */
